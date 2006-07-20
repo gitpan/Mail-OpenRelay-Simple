@@ -1,13 +1,13 @@
 package Mail::OpenRelay::Simple;
 
-use 5.008006;
+use 5.008;
 use strict;
 use warnings;
 use base qw(Class::Accessor::Fast);
 use Carp;
 use Net::Telnet;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 $VERSION = eval $VERSION;
 
 __PACKAGE__->mk_accessors( qw(host port timeout from_email rcpt_email banner debug));

@@ -1,10 +1,11 @@
-use 5.008006;
+use 5.008;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME              => 'Mail::OpenRelay::Simple',
     VERSION_FROM      => 'lib/Mail/OpenRelay/Simple.pm',
     PREREQ_PM         => {
+			Class::Accessor::Fast => 0.25,
 			Net::Telnet => 3.03,
     			},
     ($] >= 5.005 ?     
